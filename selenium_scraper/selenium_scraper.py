@@ -35,12 +35,12 @@ class SeleniumClass:
         self._headless = headless
         self.set_browser()
 
-    def use_chrome(self):
+    def setChrome(self):
         self._browser = Chrome
         self._options = ChromeOptions()
         self._name = "Chrome"
     
-    def use_firefox(self):
+    def setFirefox(self):
         self._browser = Firefox
         self._options = FirefoxOptions()
         self._name = "Firefox"
